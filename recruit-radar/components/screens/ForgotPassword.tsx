@@ -1,28 +1,17 @@
 import React, { useState } from "react";
 import { Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
-import { useNavigation } from "@react-navigation/native";
-import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../types';
 import { styles } from '../../style/forgotPassword';
+import  Header  from "./componentsScreen/Header";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
-  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
-  const handleBack = () => {
-    navigation.goBack();  // Função para voltar à tela anterior
-  };
+ 
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <TouchableOpacity onPress={handleBack}>
-          <Image
-            source={require('../../assets/arrow-left-icon.png')} // Substitua pelo caminho correto do ícone de seta
-            style={styles.backIcon}
-          />
-        </TouchableOpacity>
-      </View>
+      
+      <Header showRightIcon={false}/>
       
       <View style={styles.titlePrimaryContainer}>
         <Text style={styles.titlePrimary}>Recruit</Text>

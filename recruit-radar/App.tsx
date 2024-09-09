@@ -2,10 +2,16 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createStackNavigator } from '@react-navigation/stack';
-import CadastroComponent from './components/screens/CadastroComponent';
+import SplashScreen from './components/screens/SplashScreen';
 import RegistroComponent from './components/screens/RegistroComponent'
 import Jobs from './components/screens/Jobs'
 import ForgotPassword from './components/screens/ForgotPassword'
+import cadastroEmail from './components/screens/cadastro_steps/cadastroEmail'
+import cadastroSenha from './components/screens/cadastro_steps/cadastroSenha'
+import cadastroCEP from './components/screens/cadastro_steps/cadastroCEP'
+import cadastroCPF from './components/screens/cadastro_steps/cadastroCPF'
+import cadastroGender from './components/screens/cadastro_steps/cadastroGender'
+
 import { RootStackParamList } from './components/types';
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -13,10 +19,10 @@ const Stack = createStackNavigator<RootStackParamList>();
 const App = () => {
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName='CadastroComponent'>
+        <Stack.Navigator initialRouteName='SplashScreen'>
         <Stack.Screen
-          name="CadastroComponent"
-          component={CadastroComponent}
+          name="SplashScreen"
+          component={SplashScreen}
           options={{headerShown:false}}
         />
         <Stack.Screen
@@ -32,6 +38,31 @@ const App = () => {
          <Stack.Screen
           name="ForgotPassword"
           component={ForgotPassword}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="cadastroEmail"
+          component={cadastroEmail}
+          options={{headerShown:false}}
+        />
+         <Stack.Screen
+          name="cadastroSenha"
+          component={cadastroSenha}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="cadastroCEP"
+          component={cadastroCEP}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="cadastroCPF"
+          component={cadastroCPF}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="cadastroGender"
+          component={cadastroGender}
           options={{headerShown:false}}
         />
       </Stack.Navigator>

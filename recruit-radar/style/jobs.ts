@@ -21,9 +21,30 @@ export const styles = StyleSheet.create({
     height: 39,
     tintColor:'#0262A6'
   },
+  cardCompanyImage:{
+    flexDirection:'row',
+    
+  },
+  companyImage:{
+    width: 36,
+    height: 36,
+    borderRadius:2,
+    marginRight:10,
+    tintColor:'#FF1493'
+  },
+  cardImageUser:{
+    flexDirection:'row',
+  },
+  imageUser:{
+    width: 26,
+    height: 26,
+    borderRadius:8,
+    marginRight:10,
+  },
   cardcontainer:{
-    width:350,
-    height:400,
+    
+    width: '100%', 
+    height:'auto',
     justifyContent:'center',
     alignItems:'center',
     flexDirection:'column',
@@ -35,12 +56,12 @@ export const styles = StyleSheet.create({
     maxHeight: 3000,
   },
   card: {
-     backgroundColor: '#e6f2ff',
+     backgroundColor: '#0262A6',
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 10,
-    width:295,
-    height:318, 
+    width:320,
+    height:380, 
     padding: 20,
     marginHorizontal: 10,
     marginVertical: 20,
@@ -53,7 +74,7 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#007bff',
+    color: 'white',
     marginBottom: 10,
   },
   companyRow: {
@@ -67,13 +88,13 @@ export const styles = StyleSheet.create({
     marginRight: 10,
   },
   companyName: {
-    fontSize: 18,
-    color: '#333',
-    fontWeight: 'bold',
+    fontSize: 20,
+    color: 'white',
+    fontWeight: 'regular',
   },
   location: {
     fontSize: 16,
-    color: '#666',
+    color: 'white',
     marginVertical: 5,
   },
   matchRow: {
@@ -89,14 +110,14 @@ export const styles = StyleSheet.create({
   },
   matchMessage: {
     fontSize: 16,
-    color: '#007bff',
+    color: 'white',
   },
   datePosted: {
     fontSize: 14,
-    color: '#999',
+    color: 'white',
   },
   detailsLink: {
-    color: '#007bff',
+    color: 'white',
     fontWeight: 'bold',
     marginTop: 10,
     fontSize:18,
@@ -128,6 +149,24 @@ export const styles = StyleSheet.create({
     alignItems:'center',
     justifyContent:'center',
     tintColor: '#fff',
+  },
+  containerLike:{
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems:'center',
+    paddingVertical: 10,
+    marginTop:-80
+    
+  },
+  like:{
+    width:70,
+    height:70,
+    tintColor: 'green',
+  },
+  dislike:{
+    width:70,
+    height:70,
+    tintColor: 'red',
   },
   headerTitle: {
     fontSize: 20,

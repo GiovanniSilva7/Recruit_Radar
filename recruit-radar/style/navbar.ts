@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
       justifyContent: 'space-around',
       alignItems: 'center',
       paddingVertical: 10,
-      backgroundColor: '#1BB8FA',
+      backgroundColor: '#0262A6',
       position: 'absolute',
       bottom: 0,
       width: '100%',
@@ -21,12 +21,12 @@ export const styles = StyleSheet.create({
       height: 30,
       alignItems:'center',
       justifyContent:'center',
-      tintColor: '#fff',
+      tintColor: 'white',    
     },
     headerTitle: {
       fontSize: 20,
       fontWeight: 'bold',
-      color: '#007bff',
+      color: 'white',
     },
     textHome:{
       color:'white',

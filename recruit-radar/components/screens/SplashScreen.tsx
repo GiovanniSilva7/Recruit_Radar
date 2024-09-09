@@ -33,7 +33,7 @@ const CadastroComponent = () => {
           </View>
 
           <Text style={styles.terms}>
-            Ao clicar em Aceite e Cadastre-se, você aceita o 
+            Ao clicar em Entrar, você aceita o 
             <Text style={styles.link}> Contrato do Usuário</Text>, a 
             <Text style={styles.link}> Política de Privacidade</Text> e a 
             <Text style={styles.link}> Política de Cookies</Text> do RecruitRadar.
@@ -41,15 +41,11 @@ const CadastroComponent = () => {
 
           <View style={styles.containerButtonPrimary}>
           <TouchableOpacity style={styles.buttonPrimary} onPress={handleRegistro}>
-            <Text style={styles.textbuttonPrimary}>Aceite e cadastre-se</Text>
+            <Text style={styles.textbuttonPrimary}>Entrar</Text>
           </TouchableOpacity>
           </View>
        
-          <View style={styles.containerButtonEnter}>
-          <TouchableOpacity style={styles.buttonEnter} >
-            <Text style={styles.textButtonEnter}>Entrar</Text>
-          </TouchableOpacity>
-          </View>
+          
           
           
         </View>

@@ -17,6 +17,9 @@ const RegistroComponent = () => {
   const handleForgotPassword = () => {
     navigation.navigate('ForgotPassword');
   };
+  const handleRegister = () => {
+    navigation.navigate('cadastroEmail');
+  };
     return (
         <View style={styles.container}>
           <View style={styles.form}>
@@ -32,9 +35,9 @@ const RegistroComponent = () => {
           </Text>
           </View>
           <View style={styles.text2Container}>
-            <Text style={styles.text2}>
-            <Text style={styles.highlight}>ou</Text> Cadastre-se no RecruitRadar.
-            </Text>
+            <TouchableOpacity >
+            <Text style={styles.text2} onPress={handleRegister}>ou Cadastre-se no RecruitRadar.</Text>
+            </TouchableOpacity>
           </View>
           
           <TextInput
