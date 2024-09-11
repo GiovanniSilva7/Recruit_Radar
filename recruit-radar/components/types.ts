@@ -10,4 +10,6 @@ export type RootStackParamList = {
   cadastroCEP : undefined;
   cadastroCPF : undefined;
   cadastroGender:undefined;
+  CadastroEmprego:undefined;
+  CadastroCargo:undefined;
 };

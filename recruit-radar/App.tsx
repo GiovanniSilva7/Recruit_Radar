@@ -11,6 +11,8 @@ import cadastroSenha from './components/screens/cadastro_steps/cadastroSenha'
 import cadastroCEP from './components/screens/cadastro_steps/cadastroCEP'
 import cadastroCPF from './components/screens/cadastro_steps/cadastroCPF'
 import cadastroGender from './components/screens/cadastro_steps/cadastroGender'
+import CadastroEmprego from './components/screens/cadastro_steps/CadastroEmprego'
+import CadastroCargo from './components/screens/cadastro_steps/CadastroCargo'
 
 import { RootStackParamList } from './components/types';
 
@@ -63,6 +65,16 @@ const App = () => {
         <Stack.Screen
           name="cadastroGender"
           component={cadastroGender}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="CadastroEmprego"
+          component={CadastroEmprego}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="CadastroCargo"
+          component={CadastroCargo}
           options={{headerShown:false}}
         />
       </Stack.Navigator>

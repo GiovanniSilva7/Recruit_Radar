@@ -177,4 +177,96 @@ export const styles = StyleSheet.create({
     color:'white',
     fontSize:12,
   },
+  modalContainer: {
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fundo semitransparente para destacar o modal
+  },
+  modalContent: {
+    width: '90%', // Aumenta a largura para ocupar 90% da tela
+    height: '80%', // Aumenta a altura para 80% da tela
+    backgroundColor: '#007bff', 
+    borderRadius: 10,
+    padding: 20,
+    justifyContent: 'space-between', // Distribui o conteúdo
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+    color:'white'
+  },
+  companyInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+    color:'black'
+  },
+  modalTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color:'white'
+  },
+  modalDescription: {
+    fontSize: 16,
+    lineHeight: 22,
+    color:'white'
+  },
+  companyLogo: {
+    width: 50,
+    height: 50,
+    marginRight: 10,
+    tintColor:'white'
+  },
+  backIcon: {
+    width: 24,
+    height: 24,
+    color:'black'
+  },
+ 
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color:'white'
+  },
+  
+  sidebar: {
+    width: '70%', // 70% da largura da tela
+    height: '100%',
+    backgroundColor: '#fff',
+    padding: 20,
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
+  },
+  closeSidebar: {
+    alignSelf: 'flex-end',
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  profileSection: {
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  profileImage: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    marginBottom: 10,
+  },
+  profileName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  menuItem: {
+    fontSize: 16,
+    color: '#007bff',
+    paddingVertical: 10,
+  },
+ 
+  
 });

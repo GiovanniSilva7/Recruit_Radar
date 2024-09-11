@@ -3,6 +3,9 @@ import CheckBox from 'expo-checkbox'; // Importando o CheckBox correto
 import { Text, View, TouchableOpacity } from 'react-native';
 import { styles } from '../../../style/cadastro_steps/cadastroGender'; // Ajuste o caminho do estilo
 import Header from "../componentsScreen/Header"; // Seu componente de Header, como no exemplo
+import { useNavigation } from "@react-navigation/native";
+import { RootStackParamList } from "../../types";
+import { StackHeaderProps, StackNavigationProp } from '@react-navigation/stack';
 
 const CadastroGender = () => {
     const [selectedGender, setSelectedGender] = useState<string | null>(null);
@@ -11,6 +14,11 @@ const CadastroGender = () => {
     const handleGenderSelection = (gender: string) => {
       // Se o gênero já estiver selecionado, desmarque-o, caso contrário, selecione
       setSelectedGender((prev) => (prev === gender ? null : gender));
+     ;
+}
+const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
+const handleEmprego = () =>{
+  navigation.navigate('CadastroEmprego')
     };
   
     return (
@@ -57,7 +65,7 @@ const CadastroGender = () => {
           </View>
   
           {/* Botão de Continuar */}
-          <TouchableOpacity style={styles.buttonContinue}>
+          <TouchableOpacity style={styles.buttonContinue} onPress={handleEmprego}>
             <Text style={styles.textButtonContinue}>Continuar</Text>
           </TouchableOpacity>
         </View>
