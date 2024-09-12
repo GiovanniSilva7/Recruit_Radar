@@ -61,7 +61,7 @@ const cadastroCPF = () => {
                     value={CPF}
                     onChangeText={handleCEP}
                     keyboardType="numeric"
-                    maxLength={10}
+                    maxLength={14}
                 />
 
                   <View style={styles.text2ContainerBithday}>
@@ -73,11 +73,11 @@ const cadastroCPF = () => {
                 <Text style={styles.label}>Data de nascimento</Text>
                 <TextInput
                     style={styles.inputBithday}
-                    placeholder="00/00/00"
+                    placeholder="00/00/0000"
                     value={Bithday}
                     onChangeText={handleBithday}
                     keyboardType="numeric"
-                    maxLength={8}
+                    maxLength={10}
                 />
 
                 <TouchableOpacity style={styles.buttonSend} onPress={handleGender}>

@@ -47,7 +47,7 @@ const cadastroCEP = () => {
                     value={CEP}
                     onChangeText={handleCEP}
                     keyboardType="numeric"
-                    maxLength={9}
+                    maxLength={8}
                 />
 
                 <TouchableOpacity style={styles.buttonSend} onPress={handleCPF}>
