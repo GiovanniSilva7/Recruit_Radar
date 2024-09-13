@@ -14,6 +14,8 @@ import cadastroGender from './components/screens/cadastro_steps/cadastroGender'
 import CadastroEmprego from './components/screens/cadastro_steps/CadastroEmprego'
 import CadastroCargo from './components/screens/cadastro_steps/CadastroCargo'
 import CadastroFoto from './components/screens/cadastro_steps/CadastroFoto'
+import DadosPessoais from './components/screens/componentTabBar/DadosPessoais'
+
 
 
 import { RootStackParamList } from './components/types';
@@ -82,6 +84,11 @@ const App = () => {
         <Stack.Screen
           name="CadastroFoto"
           component={CadastroFoto}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="DadosPessoais"
+          component={DadosPessoais}
           options={{headerShown:false}}
         />
       </Stack.Navigator>

@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { Modal, View, Text, TouchableOpacity, Image, Animated, Dimensions } from 'react-native';
 import { styles } from '../../../style/profilesidebra';  // Importa os estilos
+import { NavigationProp, useNavigation } from '@react-navigation/native';
+import { RootStackParamList } from '../../types';
 
 const { width } = Dimensions.get('window');
 
@@ -11,6 +13,10 @@ type ProfileSidebarModalProps = {
   closeModal: () => void;
 };
  
+const handleNextStep = () =>{
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+  navigation.navigate('DadosPessoais')
+}
 
 const ProfileSidebarModal: React.FC<ProfileSidebarModalProps> = ({ modalVisible, closeModal }) => {
   const slideAnim = useRef(new Animated.Value(width)).current;
@@ -55,7 +61,7 @@ const ProfileSidebarModal: React.FC<ProfileSidebarModalProps> = ({ modalVisible,
           </View>
 
           {/* Itens do menu */}
-          <Text style={styles.menuItem}>Ver perfil</Text>
+          <Text style={styles.menuItem} onPress={handleNextStep}>Ver perfil</Text>
           <Text style={styles.menuItem}>Editar perfil</Text>
           <Text style={styles.menuItem}>Excluir Perfil</Text>
         </Animated.View>

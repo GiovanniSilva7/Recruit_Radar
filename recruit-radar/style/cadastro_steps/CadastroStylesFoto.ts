@@ -65,7 +65,7 @@ export const styles = StyleSheet.create({
     },
     textButtonSend: {
         color: '#FFFFFF',
-        fontSize: 18,
+        fontSize: 32,
         fontWeight: 'bold',
     },
     skipButton: {
@@ -74,7 +74,7 @@ export const styles = StyleSheet.create({
     },
     textSkipButton: {
         color: '#737380',
-        fontSize: 16,
+        fontSize: 26,
     },
     profilePhoto: {
         width: 150,
