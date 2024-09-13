@@ -36,7 +36,7 @@ const CadastroCargo = () => {
     const handleNextStep = () => {
         // Validação e navegação
         if (jobs.length > 0 && locations.length > 0) {
-            //navigation.navigate('NextScreen');
+            navigation.navigate('CadastroFoto');
         } else {
             alert("Por favor, adicione pelo menos um cargo e uma localidade.");
         }

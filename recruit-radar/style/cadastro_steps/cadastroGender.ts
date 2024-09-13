@@ -6,12 +6,14 @@ export const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     padding: 16,
     justifyContent: 'center',
+    
   },
   content:{
     flex: 1,
     backgroundColor: '#FFFFFF',
     padding: 16,
     justifyContent: 'center',
+    marginBottom:'50%',
   },
   logoContainer: {
     justifyContent: 'center',
@@ -53,7 +55,7 @@ export const styles = StyleSheet.create({
   },
   textButtonContinue: {
     color: '#FFF',
-    fontSize: 18,
+    fontSize: 32,
     fontWeight: 'bold',
   },
 });

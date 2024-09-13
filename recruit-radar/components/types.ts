@@ -12,4 +12,5 @@ export type RootStackParamList = {
   cadastroGender:undefined;
   CadastroEmprego:undefined;
   CadastroCargo:undefined;
+  CadastroFoto:undefined;
 };
