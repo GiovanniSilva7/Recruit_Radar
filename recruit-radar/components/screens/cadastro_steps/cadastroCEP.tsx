@@ -43,11 +43,11 @@ const cadastroCEP = () => {
                 <Text style={styles.label}>Digite seu CEP</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="00000-00"
+                    placeholder="00000-000"
                     value={CEP}
                     onChangeText={handleCEP}
                     keyboardType="numeric"
-                    maxLength={8}
+                    maxLength={9}
                 />
 
                 <TouchableOpacity style={styles.buttonSend} onPress={handleCPF}>

@@ -24,6 +24,21 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#333',
   },
+  logo: {
+    width: 30,
+    height: 30, 
+    
+  },
+  titlePrimaryContainer:{
+    flexDirection:"row",
+    justifyContent: 'center',
+  },
+  
+  titlePrimary:{
+    fontFamily: 'Lora_400Regular',
+    fontSize: 20,
+    color: '#0262A6',
+  },
   profileSection: {
     alignItems: 'center',
     marginVertical: 20,
@@ -33,11 +48,12 @@ export const styles = StyleSheet.create({
     height: 80,
     borderRadius: 40,
     marginBottom: 10,
+    tintColor:'#007bff'
   },
   profileName: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#007bff',
   },
   menuItem: {
     fontSize: 16,

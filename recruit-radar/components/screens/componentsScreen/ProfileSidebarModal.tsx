@@ -45,11 +45,13 @@ const ProfileSidebarModal: React.FC<ProfileSidebarModalProps> = ({ modalVisible,
       onRequestClose={closeModal}
     >
       <View style={styles.modalContainer}>
+
       <Animated.View style={[styles.sidebar, { right: slideAnim }]}>
           {/* Botão de fechar */}
           <TouchableOpacity onPress={closeModal}>
             <Text style={styles.closeSidebar}>X</Text>
           </TouchableOpacity>
+         
 
           {/* Seção do perfil */}
           <View style={styles.profileSection}>

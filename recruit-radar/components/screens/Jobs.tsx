@@ -100,6 +100,11 @@ const Jobs = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
+      <View style={styles.titlePrimaryContainer}>
+        <Text style={styles.titlePrimary}>Recruit </Text>   
+        <Image source={require('../../img/recruit_logo.png')} style={styles.logo} />
+        <Text style={styles.titlePrimary}> Radar</Text>
+      </View>
         <TouchableOpacity onPress={openSidebar}>
           <Image
             source={require('../../assets/profile.png')}

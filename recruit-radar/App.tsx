@@ -1,6 +1,5 @@
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createStackNavigator } from '@react-navigation/stack';
 import SplashScreen from './components/screens/SplashScreen';
 import RegistroComponent from './components/screens/RegistroComponent'

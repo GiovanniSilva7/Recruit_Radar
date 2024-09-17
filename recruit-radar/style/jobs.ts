@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     paddingHorizontal: 15,
     borderBottomWidth: 1,
     borderBottomColor: '#ddd',
@@ -20,6 +20,21 @@ export const styles = StyleSheet.create({
     width: 37,
     height: 39,
     tintColor:'#0262A6'
+  },
+  logo: {
+    width: 30,
+    height: 30, 
+  },
+  titlePrimaryContainer:{
+    flexDirection:"row",
+    justifyContent: 'center',
+    marginRight:'50%'
+  },
+  
+  titlePrimary:{
+    fontFamily: 'Lora_400Regular',
+    fontSize: 20,
+    color: '#0262A6',
   },
   cardCompanyImage:{
     flexDirection:'row',
@@ -82,11 +97,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
   },
-  logo: {
-    width: 40,
-    height: 40,
-    marginRight: 10,
-  },
+  
   companyName: {
     fontSize: 20,
     color: 'white',
