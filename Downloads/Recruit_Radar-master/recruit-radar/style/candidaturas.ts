@@ -1,18 +1,27 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+  
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingHorizontal: 30,
+    paddingHorizontal: 20,
+
   },
+
   headerTitle: {
     fontSize: 22,
     fontWeight: 'bold',
     color: '#0262A6',
     textAlign: 'center',
     marginVertical: 60,
+    width: '100%',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
+    height: 40,
+    
   },
+  
   card: {
     backgroundColor: '#fff',
     borderRadius: 10,

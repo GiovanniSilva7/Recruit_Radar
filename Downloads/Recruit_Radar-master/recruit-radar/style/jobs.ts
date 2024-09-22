@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
     maxHeight: 3000,
   },
   card: {
-     backgroundColor: '#0262A6',
+     backgroundColor: '#47B3FF',
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 10,
@@ -90,7 +90,7 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     color: 'white',
-    marginBottom: 10,
+    marginBottom: 60,
   },
   companyRow: {
     flexDirection: 'row',
@@ -170,13 +170,13 @@ export const styles = StyleSheet.create({
     
   },
   like:{
-    width:70,
-    height:70,
+    width:50,
+    height:50,
     tintColor: 'green',
   },
   dislike:{
-    width:70,
-    height:70,
+    width:50,
+    height:50,
     tintColor: 'red',
   },
   headerTitle: {
@@ -197,7 +197,7 @@ export const styles = StyleSheet.create({
   modalContent: {
     width: '90%', // Aumenta a largura para ocupar 90% da tela
     height: '80%', // Aumenta a altura para 80% da tela
-    backgroundColor: '#007bff', 
+    backgroundColor: '#47B3FF', 
     borderRadius: 10,
     padding: 20,
     justifyContent: 'space-between', // Distribui o conteúdo
@@ -212,7 +212,7 @@ export const styles = StyleSheet.create({
   companyInfo: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 10,
     color:'black'
   },
   modalTitle: {
